@@ -6,6 +6,40 @@
 /**google font**/
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800";
 @import "https://fonts.googleapis.com/css?family=Raleway:400,600,700,800";
+
+
+ @keyframes heartFadeInOut {
+  0% {transform: scale(1);}
+  25% {transform: scale(.97);}
+  35% {transform: scale(.93);}
+  45% {transform: scale(1.1);}
+  55% {transform: scale(.93);}
+  65% {transform: scale(1.1);}
+  75% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+}
+
+@-webkit-keyframes heartFadeInOut {
+  0% {-webkit-transform: scale(1);}
+  25% {-webkit-transform: scale(.97);}
+  35% {-webkit-transform: scale(.93);}
+  45% {-webkit-transform: scale(1.1);}
+  55% {-webkit-transform: scale(.93);}
+  65% {-webkit-transform: scale(1.1);}
+  75% {-webkit-transform: scale(1.03);}
+  100% {-webkit-transform: scale(1);}
+}
+
+#heart img.img-responsive { 
+
+  animation-name: heartFadeInOut; 
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+
+  -webkit-animation-name: heartFadeInOut;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+}
 /**colors**/
 .red-color {
   color: #f55b63 !important;
@@ -951,7 +985,7 @@ Parallax backgrounds
 
 .call-to-action {
   padding: 30px 20px;
-  background: #42b8d4;
+  background: #e2007d; /*#42b8d4;*/
   position: relative;
   z-index: 999;
   margin-top: 0px;
@@ -968,6 +1002,12 @@ Page title style
   padding-bottom: 100px;
   background: url("../images/bg4.jpg") no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+}
+.page-title.gallery{
+ background: url("../images/gallery_img.jpg") no-repeat;
+	background-attachment: fixed;
   background-size: cover;
   background-position: center bottom;
 }
