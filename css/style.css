@@ -1,4 +1,4 @@
-/* 
+/*
     Author     : Design_mylife
     File       : Assan charity template
     version    : v1.0
@@ -7,6 +7,11 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800";
 @import "https://fonts.googleapis.com/css?family=Raleway:400,600,700,800";
 
+.page-img{
+  margin-left: 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
 
  @keyframes heartFadeInOut {
   0% {transform: scale(1);}
@@ -30,9 +35,17 @@
   100% {-webkit-transform: scale(1);}
 }
 
-#heart img.img-responsive { 
+#logo{
 
-  animation-name: heartFadeInOut; 
+	width:50%
+	height:auto;
+	background-size:cover;
+	background-image: url(../images/sparc_logo.png);
+}
+
+#heart img.img-responsive {
+
+  animation-name: heartFadeInOut;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 
@@ -1000,13 +1013,32 @@ Page title style
 .page-title {
   padding-top: 250px;
   padding-bottom: 100px;
-  background: url("../images/bg4.jpg") no-repeat;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+}
+.page-title.hangtime{
+  background: url("../images/hangtime/hangtime_top.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+}
+.page-title.art{
+  background: url("../images/art/art.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.page-title.about{
+  background:url("http://res.cloudinary.com/league-counterplay/image/upload/c_scale,w_1644/v1503698719/sparc/bg1-min_oqxjhi.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center bottom;
 }
 .page-title.gallery{
- background: url("../images/gallery_img.jpg") no-repeat;
+ background: url("http://res.cloudinary.com/league-counterplay/image/upload/c_scale,w_1767/v1503700900/sparc/hangtime_top-min.jpg") no-repeat;
 	background-attachment: fixed;
   background-size: cover;
   background-position: center bottom;
